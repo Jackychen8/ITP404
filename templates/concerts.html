@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+      <h1 ng-show="vm.noGo">Sorry, no concerts for this artists.</h1>
+      <div class="song concert" ng-repeat="concert in vm.concerts">
+        <artist-concert concert="concert">
+          <img src="{{concert.image.medium.url}}">
+          <h2>{{concert.title}}</h2>
+          <h4>Venue: {{concert.venue_address}}</h4>
+          <h4>Date: {{concert.start_time}}</h4>
+        </artist-concert>
+      </div>
+    </div>
+</div>

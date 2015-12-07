@@ -1,0 +1,46 @@
+.loading {
+	background-color: yellow;
+	padding: 10px;
+}
+
+.song {
+	border-bottom: 1px solid black;
+	background: white;
+	padding: 55px;
+}
+
+
+
+.song img {
+	float: left;
+	margin-right: 20px;
+}
+
+.song h4 {
+	margin-top: 0;
+}
+
+.explicit {
+	width: 140px;
+	height: 80px;
+	background-image: url("images/parentaladvisory.gif");
+	color: black;
+	float: left;
+}
+
+.shrink{
+	width:30px;
+	height: 30px;
+}
+
+.whiteTxt{
+	color:white;
+}
+
+.wide{
+	width: 300px;
+}
+
+.concert{
+	min-height: 230px;
+}

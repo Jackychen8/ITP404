@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-8">
+    <div>
+      <h4>{{vm.artistName}}</h4>
+      <div class="song" ng-repeat="album in vm.albums">
+        <itunes-album album="album">
+        </itunes-album>
+        <div style="float: right">
+          <div class="btn-success btn" ng-click="vm.favorite(album)" ng-show="album.notStarred">
+            Favorite
+          </div>
+          <div ng-show="!album.notStarred">
+            <img class="shrink" src="../../images/Button Favorite-01.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 whiteTxt">
+    <h4>Favorite Songs</h4>
+    <div>
+      <p ng-if="!vm.favorites.length">No favorited songs</p>
+      <ul>
+        <li ng-repeat="favorite in vm.favorites">
+          {{favorite.collectionName}} by {{favorite.artistName}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
